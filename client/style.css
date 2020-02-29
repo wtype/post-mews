@@ -1,0 +1,200 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 10px;
+}
+
+*:focus,
+*:active {
+  outline: none;
+}
+
+::selection {
+  background: black;
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  background: black;
+  color: white;
+  padding-top: 4vmin;
+  padding-bottom: 4vmin;
+}
+
+main {
+  padding-top: 4vmin;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.form {
+  padding: 4vmin;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.form h2 {
+  flex: 0.5;
+  position: relative;
+  margin-right: 4vmin;
+  margin-bottom: 10vmin;
+  text-align: left;
+  top: -10px;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+form label {
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+
+form label:first-of-type {
+  margin-top: 0;
+}
+
+form label:last-of-type {
+  margin-top: 1.15rem;
+}
+
+form input,
+form textarea,
+form button {
+  border-radius: 0.015rem;
+  border: none;
+  padding: 1rem 2rem 1rem 1rem;
+  box-shadow: 0px 0px 0px 2px black;
+  margin: 0.5rem;
+  font-size: 2rem;
+  transition: 200ms ease-out;
+  font-family: inherit;
+}
+
+form button {
+  background: white;
+  color: black;
+  cursor: pointer;
+  margin-top: 2.15rem;
+  transform: translate(-2.5px, -2.5px);
+  box-shadow: 0px 0px 0px 2px black, 2.5px 2.5px 0px 2px black,
+    1.5px 1.5px 0px 2px black, 1px 1px 0px 2px black;
+}
+
+form button:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 0px 0px 0px 2px black, 5px 5px 0px 2px black,
+    4px 4px 0px 2px black, 3px 3px 0px 2px black, 2px 2px 0px 2px black,
+    1px 1px 0px 2px black;
+}
+
+form button:active {
+  cursor: pointer;
+  transform: translate(0px, 0px);
+  box-shadow: 0.5px 0.5px 0px 2px black;
+  background: black;
+  color: white;
+}
+
+form input:focus,
+form textarea:focus {
+  transform: translate(-5px, -5px);
+  box-shadow: 0px 0px 0px 2px black, 5px 5px 0px 2px black,
+    4px 4px 0px 2px black, 3px 3px 0px 2px black, 2px 2px 0px 2px black,
+    1px 1px 0px 2px black;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+.sticky {
+  position: sticky;
+  top: 2rem;
+  /* line-height: 0; */
+}
+
+#loading {
+  margin-top: 1.75rem;
+  box-shadow: 0px 0px 0px 2px black;
+  margin-top: 1rem;
+  height: 1.75rem;
+  width: 96%;
+  margin: 1rem auto;
+  display: none;
+}
+
+#progress {
+  background: black;
+  width: 0;
+  height: 100%;
+  padding: 0.15rem;
+}
+
+#progress {
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  mix-blend-mode: difference;
+}
+
+.mews {
+  margin-top: 4vmin;
+}
+
+.mews div {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 3.5vmin 4vmin;
+  margin-top: 2.5vmin;
+  box-shadow: 0px 0px 0px 2px black;
+  transition: 200ms ease-out;
+}
+
+.mews div:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 0px 0px 0px 2px black, 5px 5px 0px 2px black,
+    4px 4px 0px 2px black, 3px 3px 0px 2px black, 2px 2px 0px 2px black,
+    1px 1px 0px 2px black;
+}
+
+.mews h3 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.mews p {
+  font-size: 2rem;
+}
+
+@media (max-width: 880px) {
+  .form {
+    flex-direction: column;
+  }
+  form {
+    width: 100%;
+  }
+}

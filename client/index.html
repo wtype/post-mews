@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mews // New Site For Cats 😻</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hear the Mews 😻</h1>
+    </header>
+    <main>
+      <section class="form">
+        <h2 class="sticky">Post your mew</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="name">Mew</label>
+          <textarea type="text" id="mew" name="mew" required></textarea>
+          <button type="submit">Post Mew 😺</button>
+          <div id="loading">
+            <div id="progress"></div>
+          </div>
+        </form>
+      </section>
+      <section class="mews"></section>
+    </main>
+    <script src="client.js"></script>
+  </body>
+</html>
