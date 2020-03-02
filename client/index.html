@@ -12,12 +12,12 @@
     </header>
     <main>
       <section class="form">
-        <h2 class="sticky">Post your mew</h2>
+        <h2>Post your mew</h2>
         <form>
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="name" name="name" maxlength="50" required />
           <label for="name">Mew</label>
-          <textarea type="text" id="mew" name="mew" required></textarea>
+          <textarea type="text" id="mew" name="mew" maxlength="280" required></textarea>
           <button type="submit">Post Mew 😺</button>
           <div id="loading">
             <div id="progress"></div>

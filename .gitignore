@@ -2,3 +2,5 @@
 dist
 .vscode
 node_modules
+index2.js
+client2.js

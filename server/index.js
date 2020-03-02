@@ -21,7 +21,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/mews', (req, res, next) => {
+  const { skip = 0, limit } = req.params;
+
   db.find({})
+    .skip(Number(skip))
+    .limit(Number(limit))
     .sort({ created: -1 })
     .exec(function (err, data) {
       if (err) {
@@ -30,14 +34,14 @@ app.get('/mews', (req, res, next) => {
         });
         res.end();
         return;
-      }
+      }      
       res.json(data);
     });
 });
 
 app.use(
   rateLimit({
-    windowMs: 30 * 1000,
+    windowMs: 30e3,
     max: 3,
   })
 );
