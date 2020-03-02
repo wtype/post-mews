@@ -34,7 +34,7 @@ app.get('/mews', (req, res, next) => {
         });
         res.end();
         return;
-      }      
+      }
       res.json(data);
     });
 });
